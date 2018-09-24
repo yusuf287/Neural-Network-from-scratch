@@ -2,6 +2,7 @@
 ================= LINEAR->RELU->LINEAR->SIGMOID ===================
 
 Initially I have declared all the required function:
+
     1. sigmoid: To calculate sigmoid of any numerical value.
     2. relu: To apply relu function on any number.
     3. sigmoid_backward: sigmoid function for the back propogation.
