@@ -61,8 +61,8 @@ def initialize_parameters(n_x, n_h, n_y):
 
 def forward_propagation(A_prev, W, b, activation):
     
-#    Z = np.dot(W, A_prev) + b  (Alternate method)
-
+    Z = np.dot(W, A_prev) + b  
+'''
     # Used for loop instead of vectorisation method.
     Z = np.zeros((W.shape[0], A_prev.shape[1]))
     for i in range(W.shape[0]):
@@ -74,7 +74,7 @@ def forward_propagation(A_prev, W, b, activation):
     for i in range(W.shape[0]):
         for j in range(A_prev.shape[1]):
             Z[i,j] += b[i][0]
-        
+'''        
         
     linear_cache = (A_prev, W, b)
     
@@ -213,7 +213,7 @@ n_y = 1        # Length of output layer
 layer_dimention = (n_x, n_h, n_y)
 
 #Build the model
-parameters = build_model(train_x, train_y, layer_dimention = (n_x, n_h, n_y), num_iterations = 2, print_flag=True)
+parameters = build_model(train_x, train_y, layer_dimention = (n_x, n_h, n_y), num_iterations = 2000, print_flag=True)
 #Prediction on the traininig data set
 predictions_train = predict(train_x, train_y, parameters)
 #Prediction on the test data set
