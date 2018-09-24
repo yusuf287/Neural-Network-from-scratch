@@ -1,7 +1,7 @@
     This is an implementation of  two-layer neural network.
 ================= LINEAR->RELU->LINEAR->SIGMOID ===================
 
-Initially I have declared all the required function:
+Following are the required functions I have used to implement ANN:
 
     1. sigmoid: To calculate sigmoid of any numerical value.
     2. relu: To apply relu function on any number.
